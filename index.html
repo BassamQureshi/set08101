@@ -24,5 +24,83 @@
 <a href="https://www.redbullracing.com/int-en" style="display: block">Red Bull Racing</a>
 <a href="https://www.apple.com/" style="display: block">Apple</a>
 
+<h1>Ingredient Measurement Conversion</h1>
+  <form>
+    <label for="quantity">Quantity:</label>
+    <input type="text" id="quantity" name="quantity">
+    <br><br>
+    <label for="unit-from">Unit From:</label>
+    <select id="unit-from" name="unit-from">
+      <option value="tablespoons">Tablespoons</option>
+      <option value="teaspoons">Teaspoons</option>
+      <option value="fluid-ounces">Fluid Ounces</option>
+      <option value="milliliters">Milliliters</option>
+    </select>
+    <br><br>
+    <label for="unit-to">Unit To:</label>
+    <select id="unit-to" name="unit-to">
+      <option value="tablespoons">Tablespoons</option>
+      <option value="teaspoons">Teaspoons</option>
+      <option value="fluid-ounces">Fluid Ounces</option>
+      <option value="milliliters">Milliliters</option>
+    </select>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <br><br>
+  <p id="result"></p>
+  <script>
+    const form = document.querySelector('form');
+    const result = document.querySelector('#result');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const quantity = document.querySelector('#quantity').value;
+      const unitFrom = document.querySelector('#unit-from').value;
+      const unitTo = document.querySelector('#unit-to').value;
+        
+      let convertedQuantity;
+      switch (unitFrom) {
+        case 'tablespoons':
+          switch (unitTo) {
+            case 'teaspoons':
+              convertedQuantity = quantity * 3;
+              break;
+            case 'fluid-ounces':
+              convertedQuantity = quantity / 2;
+              break;
+            case 'milliliters':
+              convertedQuantity = quantity * 14.79;
+              break;
+            default:
+              convertedQuantity = quantity;
+          }
+            
+          break;
+        case 'teaspoons':
+          switch (unitTo) {
+            case 'tablespoons':
+              convertedQuantity = quantity / 3;
+              break;
+            case 'fluid-ounces':
+              convertedQuantity = quantity / 6;
+              break;
+            case 'milliliters':
+              convertedQuantity = quantity * 4.93;
+              break;
+            default:
+              convertedQuantity = quantity;
+          }
+          break;
+        case 'fluid-ounces':
+          switch (unitTo) {
+            case 'tablespoons':
+              convertedQuantity = quantity * 2;
+              break;
+            case 'teaspoons':
+              convertedQuantity = quantity * 6;
+              break;
+          }
 </body>
 </html> 
