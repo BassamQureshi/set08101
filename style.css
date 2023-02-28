@@ -3,8 +3,8 @@ body{
 }
 .navigation {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    flex-flow: row grow;
+    justify-content: flex-start;
     
     list-style: none;
     margin: 0; 
