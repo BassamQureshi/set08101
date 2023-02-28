@@ -24,15 +24,15 @@ body{
   
   @media all and (max-width: 800px) {
     .navigation {
-      justify-content: space-around;
+      justify-content: flex-start;
     }
   }
   
-  @media all and (max-width: 600px) {
+  /* @media all and (max-width: 600px) {
     .navigation {
-      flex-flow: column wrap;
+      flex-flow: column round;
       padding: 0;
-    }
+    } */
     .navigation a { 
       text-align: center; 
       padding: 10px;
@@ -42,5 +42,5 @@ body{
     .navigation li:last-of-type a {
       border-bottom: none;
     }
-  }
+  /* } */
   
