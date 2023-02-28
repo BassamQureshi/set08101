@@ -3,7 +3,7 @@ body{
 }
 .navigation {
     display: flex;
-    flex-flow: row grow;
+    /* flex-flow: row wrap; */
     justify-content: flex-start;
     
     list-style: none;
