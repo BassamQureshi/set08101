@@ -28,70 +28,66 @@ body{
     }
   }
   
-  /* @media all and (max-width: 600px) {
-    .navigation {
-      flex-flow: column round;
-      padding: 0;
-    } */
-    .navigation a { 
-      text-align: center; 
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+
+.navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+.navigation li:last-of-type a {
+    border-bottom: none;
+}
+label {
+    width:50px;
+    height:20px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 20px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
     }
-    .navigation li:last-of-type a {
-      border-bottom: none;
+    label:after {
+    content: "";
+    width:180px;
+    height: 180px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     }
-    label {
-        width:500px;
-        height:200px;
-        position: relative;
-        display: block;
-        background: #ebebeb;
-        border-radius: 200px;
-        box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
-        cursor: pointer;
-      }
-      label:after {
-        content: "";
-        width:180px;
-        height: 180px;
+    input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    }
+    input:checked + label {
+    background: #242424;
+    }
+    input:checked + label:after {
+    left:490px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+    }
+    label, label:after {
+    transition: 0.3s
+    }
+    label:active:after{ 
+    width: 26px; 
+    }
+    .background {
+        width: 10 vw;
+        height: 10 vh;
+        background: #fff;
+        z-index: -1;
         position: absolute;
-        top:10px;
-        left:10px;
-        background: linear-gradient(180deg,#ffcc89,#d8860b);
-        border-radius: 180px;
-        box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-      }
-      input {
-        width: 0;
-        height: 0;
-        visibility: hidden;
-      }
-      input:checked + label {
+        transition: 0.3 s;
+    }
+    input:checked + label + .background {
         background: #242424;
-      }
-      input:checked + label:after {
-        left:490px;
-        transform: translateX(-100%);
-        background: linear-gradient(180deg,#777,#3a3a3a);
-      }
-      label, label:after {
-        transition: 0.3s
-      }
-      label:active:after{ 
-        width: 260px; 
-      }
-        .background {
-          width: 100 vw;
-          height: 100 vh;
-          background: #fff;
-          z-index: -1;
-          position: absolute;
-          transition: 0.3 s;
-        }
-      input:checked + label + .background {
-          background: #242424;
-      }
-  /* } */
+    }
+ 
   
