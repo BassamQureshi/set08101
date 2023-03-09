@@ -109,6 +109,3 @@ input:checked + label::after {
 input:checked + label + .background {
   background: #403946;
 }
-
- 
-  
