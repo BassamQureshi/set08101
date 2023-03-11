@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title> 
-    Food Recipes - Home
-</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <ul class="navigation">
-        <li><a href="index.html">
-            Home 
-        </a></li>
-        <li><a href="recipes.html">
-            Recipes
-        </a></li>
-      </ul>
-      <input type="checkbox" id="darkmode-toggle"/>
-      <label for="darkmode-toggle"></label>
-      <div class="background"></div>      
-</body>
-</html>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+      <div class="navbar-right">
+        <form class="search-form" action="#" method="get">
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <button class="dark-mode-button"></button>
+      </div>
+    </nav>
+  
+    <script src="script.js"></script>
+  </body>
+  
