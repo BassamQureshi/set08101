@@ -16,10 +16,18 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.navbar-center {
+  flex-grow: 1;
+  text-align: center;
+  /*Centered text color*/
+  color: #FAF9F6;
+}
+
 .navbar.scroll {
   background-color: #333;
   color: #fff;
 }
+
 
 .navbar a {
   /*Heading text colour*/
