@@ -36,6 +36,10 @@ body {
   margin-right: 16px;
   transition: color 0.5s ease-in-out;
 }
+.navbar a:hover {
+  background-color: #ffa500; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
 
 .dark-mode .navbar a {
   /*dark mode enabled heading text color*/
