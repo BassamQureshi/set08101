@@ -45,6 +45,10 @@ body {
   /*dark mode enabled heading text color*/
   color: #fff;
 }
+.dark-mode .navbar a:hover {
+  background-color: #ffa500; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
+}
 
 .search-form {
   /*search bar position*/
