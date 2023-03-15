@@ -138,20 +138,21 @@ body {
   color: #fff;
 }
 .image-container {
-  margin-top: 20px;
+  margin-top: 1px;
   margin-bottom: 20px;
   text-align: center;
 }
 .image-container img {
   display: block;
-  width: 50%;
-  height: 0 auto;
-  margin: 0 auto;
+  /*Image size*/
+  width: 30% auto;
+  height: auto;
+  margin: auto;
 }
 .image-container a {
   display: border-box;
   color: black;
-  text-align: centre auto;
+  text-align: center auto;
   padding: 0px;
   text-decoration: none;
 }
