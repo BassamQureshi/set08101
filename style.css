@@ -376,6 +376,7 @@ a:hover {
 
 .social-media a:hover {
   color: white;
+  padding: 3px;
   transform: scale(1.2);
 }
 
