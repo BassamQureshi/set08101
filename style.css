@@ -32,7 +32,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   /*Flex box/nav bar background color*/
-  background-color: #464866;
+  background-color: #263166;
   padding: 10px;
   transition: all 0.5s ease-in-out;
 }
@@ -142,7 +142,7 @@ a:hover {
 }
 
 .dark-mode .navbar {
-  background-color: #464866;
+  background-color: #263166;
   color: #fff;
 }
 
@@ -318,7 +318,7 @@ a:hover {
   bottom: 0; /* position footer at the bottom of the page */
   width: 100%; /* make footer the full width of the page */
   height: 100px; /* set height of footer */
-  background-color: #464866; /* set background color of footer */
+  background-color: #263166; /* set background color of footer */
   color: black; /* set text color of footer */
   display: flex; /* use flexbox for content alignment */
   justify-content: space-evenly; /* horizontally center content */
@@ -363,7 +363,7 @@ a:hover {
   text-align: center;
   margin-top: 20px;
   color: white;
-  background-color: #464866;
+  background-color: #263166;
 }
 
 .social-media a {
@@ -379,3 +379,12 @@ a:hover {
   transform: scale(1.2);
 }
 
+.text-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -5px;
+  border: 2px solid black;
+  padding: 5px;
+  width: 220px;
+  
+}
