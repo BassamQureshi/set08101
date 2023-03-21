@@ -5,9 +5,15 @@ body {
   transition: all 0.5s ease-in-out;
   color: black;
   /*padding-bottom: 100px; /* add this line */
-  min-height: 120vh; /* set minimum height of body to 100% viewport height */
-  position: relative; /* make body a positioned element for footer placement */
+  min-height: 200vh; /* set minimum height of body to 100% viewport height */
+  position: relative; /* make body a positioned element for footer placement */ 
+}
 
+#home{
+  background-image: url("background image 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 a {
   color: whitesmoke;
