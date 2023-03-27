@@ -325,19 +325,6 @@ a:hover {
   align-items: center; /* vertically center content */
 }
 
-
-/*.footer-center{
-  flex-grow: 1;
-  text-align: center;
-  color: black;
-}
-
-.footer-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-*/
 .footer a {
   color: black;
   text-decoration: none;
@@ -378,6 +365,8 @@ a:hover {
   color: white;
   padding: 3px;
   transform: scale(1.2);
+  background-color: #263166;
+
 }
 
 .text-container {
@@ -386,6 +375,37 @@ a:hover {
   margin-left: -5px;
   border: 2px solid black;
   padding: 5px;
-  width: 220px;
-  
+  width: 220px; 
+}
+.text-container-2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -183px;
+  margin-left: 404px;
+  border: 2px solid black;
+  padding: 5px;
+  width: 464px;
+  height: 165px;
+}
+
+.print-button button{
+  background-color: #AAABB8; /* Change background color */
+  color: black; /* Change text color */
+  border: none; /* Remove border */
+  /*padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Add cursor pointer */
+  border: 2px solid black;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: -273px;
+  margin-left: 645px;
+  border: 2px solid black;
+  padding: 5px;
+  width: 237px;
+  height: 65px;
+}
+
+.print-button button:hover {
+  background-color: #808295; /* Change background color on hover */
 }
