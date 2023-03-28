@@ -412,27 +412,29 @@ a:hover {
 .converter-container {
   background-color: transparent;
   border: 2px solid black;
-  padding: 20px;
+  padding: 11px;
   /*max-width: 400px;*/
   margin-left: 885px;
-	margin-top: -290px;
-  width: 480px;
-  height: 205px;
+	margin-top: -291px;
+  width: 500px;
+  height: 224px;
 }
 
 
 label {
-  margin-right: 0px;
+  margin-right: 10px;
   font-size: 20px;
   width: 120px;
   height: 20px;
-  padding-right: 20px;
+	
 }
 
 input {
-  width: 130px;
+  width: 120px;
   margin-right: 0px;
   height: 20px;
+	margin-bottom: 10px;
+	
 }
 
 button {
@@ -442,9 +444,9 @@ button {
 }
 
 .result-container {
-  margin-top: 10px;
+  margin-top: 0px;
   border: 2px solid black;
-  padding: 15px;
+  padding: 12px;
 }
 
 #result {
@@ -476,7 +478,24 @@ button {
   margin-top: 20px;
 }
 
-select#unit-from, select#unit-to {
+/*select#unit-from, select#unit-to {
   font-size: 14px;
   padding: 5px;
+}*/
+.amount-label {
+  display: inline-table;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 0px;
+}
+
+.unit-from, .unit-to {
+  width: 220px;
+	display: inline-block;
+}
+
+.unit-from-label, .unit-to-label {
+  width: 10%;
+  text-align: left;
+	display: inline;
 }

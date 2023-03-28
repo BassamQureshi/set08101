@@ -64,37 +64,61 @@
       <div class="form-container">
         <label for="amount">Enter Amount:</label>
         <input type="number" id="amount" name="amount">
-        <select id="unit-from" name="unit-from">
-          <option value="tsp">Teaspoons (tsp)</option>
-          <option value="tbsp">Tablespoons (tbsp)</option>
-          <option value="cup">Cups (cup)</option>
-          <option value="ml">Milliliters (ml)</option>
-          <option value="l">Liters (l)</option>
-          <option value="oz">Fluid Ounces (oz)</option>
-          <option value="pt">Pints (pt)</option>
-          <option value="qt">Quarts (qt)</option>
-          <option value="gal">Gallons (gal)</option>
+				<div class="amount-label">
+					<label class="unit-from-label" for="convert-from">Convert From:</label>
+					<select class="unit-from" name="unit-from" id="unit-from">
+          <optgroup label="Volume">
+            <option value="tsp">Teaspoons (Imperial)</option>
+            <option value="tbsp">Tablespoons (Imperial)</option>
+            <option value="fl-oz">Fluid Ounces (Imperial)</option>
+            <option value="cup">Cups (Imperial)</option>
+            <option value="pt">Pints (Imperial)</option>
+            <option value="qt">Quarts (Imperial)</option>
+            <option value="gal">Gallons (Imperial)</option>
+            <option value="ml">Milliliters (Metric)</option>
+            <option value="cl">Centiliters (Metric)</option>
+            <option value="dl">Deciliters (Metric)</option>
+            <option value="l">Liters (Metric)</option>
+          </optgroup>
+          <optgroup label="Weight">
+            <option value="oz">Ounces (Imperial)</option>
+            <option value="lb">Pounds (Imperial)</option>
+            <option value="g">Grams (Metric)</option>
+            <option value="kg">Kilograms (Metric)</option>
+          </optgroup>
         </select>
-        <label for="unit-to">Convert To:</label>
-        <select id="unit-to" name="unit-to">
-          <option value="tsp">Teaspoons (tsp)</option>
-          <option value="tbsp">Tablespoons (tbsp)</option>
-          <option value="cup">Cups (cup)</option>
-          <option value="ml">Milliliters (ml)</option>
-          <option value="l">Liters (l)</option>
-          <option value="oz">Fluid Ounces (oz)</option>
-          <option value="pt">Pints (pt)</option>
-          <option value="qt">Quarts (qt)</option>
-          <option value="gal">Gallons (gal)</option>
+				</div>
+				<div class="amount-label">
+					<label class="unit-to-label" for="unit-to">Convert To:</label>
+					<select class="unit-to" name="unit-to" id="unit-to">
+          <optgroup label="Volume">
+            <option value="tsp">Teaspoons (Imperial)</option>
+            <option value="tbsp">Tablespoons (Imperial)</option>
+            <option value="fl-oz">Fluid Ounces (Imperial)</option>
+            <option value="cup">Cups (Imperial)</option>
+            <option value="pt">Pints (Imperial)</option>
+            <option value="qt">Quarts (Imperial)</option>
+            <option value="gal">Gallons (Imperial)</option>
+            <option value="ml">Milliliters (Metric)</option>
+            <option value="cl">Centiliters (Metric)</option>
+            <option value="dl">Deciliters (Metric)</option>
+            <option value="l">Liters (Metric)</option>
+          </optgroup>
+          <optgroup label="Weight">
+            <option value="oz">Ounces (Imperial)</option>
+            <option value="lb">Pounds (Imperial)</option>
+            <option value="g">Grams (Metric)</option>
+            <option value="kg">Kilograms (Metric)</option>
+          </optgroup>
         </select>
-        <button id="convert-btn" class="convert-button">Convert</button>
-        </div>
+				</div>
+        <button id="convert-btn">Convert</button>
+      </div>
       <div class="result-container">
         <div id="result"></div>
       </div>
     </div>
-
-    <footer class="footer">
+		    <footer class="footer">
       <div class="footer-left">
         <p>© 2023 Din Din Delights. All Rights Reserved.</p>
       </div>
@@ -108,6 +132,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="converter.js"></script>
   </body>
 </html>
