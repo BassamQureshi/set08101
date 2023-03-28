@@ -4,13 +4,14 @@ body {
   font-family: consolas Black, sans-serif;
   transition: all 0.5s ease-in-out;
   color: black;
-  /*padding-bottom: 100px; /* add this line */
-  min-height: 100vh; /* set minimum height of body to 100% viewport height */
+  padding-bottom: 0px; /* add this line */
+  min-height: 100%; /* set minimum height of body to 100% viewport height */
   position: relative; /* make body a positioned element for footer placement */ 
+  
 }
 
 #home{
-  background-image: url("background image 2.jpg");
+  background-image: url("blue home pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -88,7 +89,7 @@ a:hover {
 
 .search-container input[type="text"] {
   width: 180px;
-  height: 15px;
+  height: 8px;
   border: none;
   font-size: 16px;
   padding: 8px;
@@ -105,7 +106,7 @@ a:hover {
 .fa-search {
   font-size: 20px;
   color: #ccc;
-  margin-right: 8px;
+  background-color: white;
 }
 
 .dark-mode-button {
@@ -120,7 +121,7 @@ a:hover {
   padding: 2px;
   /*These two variables adjust the position of the dark mode button */
   top: -32px;
-  right: -235px; 
+  right: -230px; 
 }
 
 .dark-mode-button::after {
@@ -315,13 +316,13 @@ a:hover {
 /* Footer styles */
 .footer {
   position: absolute; /* position footer absolutely */
-  bottom: 0; /* position footer at the bottom of the page */
+  bottom: -100%; /* position footer at the bottom of the page */
   width: 100%; /* make footer the full width of the page */
   height: 100px; /* set height of footer */
   background-color: #263166; /* set background color of footer */
   color: black; /* set text color of footer */
   display: flex; /* use flexbox for content alignment */
-  justify-content: space-evenly; /* horizontally center content */
+  justify-content: space-around; /* horizontally center content */
   align-items: center; /* vertically center content */
 }
 
