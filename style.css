@@ -17,12 +17,12 @@ body {
   background-attachment: fixed;
 }
 a {
-  color: whitesmoke;
+  color: white;
   padding: 0;
 }
 
 a:hover {
-  background-color: #ffa500; /* Change the background color on hover */
+  background-color: #3e8de3; /* Change the background color on hover */
   color: black; /* Change the text color on hover */
   padding: 0;
 
@@ -59,7 +59,7 @@ a:hover {
   transition: color 0.5s ease-in-out;
 }
 .navbar a:hover {
-  background-color: #ffa500; /* Change the background color on hover */
+  background-color: #3e8de3; /* Change the background color on hover */
   color: #fff; /* Change the text color on hover */
 }
 
@@ -68,7 +68,7 @@ a:hover {
   color: #fff;
 }
 .dark-mode .navbar a:hover {
-  background-color: #ffa500; /* Change the background color on hover */
+  background-color: #3e8de3; /* Change the background color on hover */
   color: black; /* Change the text color on hover */
 }
 
@@ -182,13 +182,13 @@ a:hover {
   color: white;
 }
 .image-container a:hover {
-  background-color: orange;
+  background-color: #3e8de3;
   color: white;
   transition: all 0.5s ease-in-out;
 
 }
 .dark-mode .image-container a:hover {
-  background-color: orange;
+  background-color: #3e8de3;
   color: black;
   transition: all 0.5s ease-in-out;
 
@@ -196,10 +196,11 @@ a:hover {
 
 .img-slider{
   position: relative;
+  padding-top: 50px;
   width: 800px;
   height: 500px;
   margin: 50px;
-  background: #1D212B;
+  background: transparent;/*changes the background colour behind the image slider*/
 }
 
 .img-slider .slide{
@@ -240,7 +241,7 @@ a:hover {
 }
 
 .img-slider .navigation .btn.active{
-  background: deepskyblue;
+  background: deepskyblue;/*Changes the colour of the dots in the image slider*/
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -334,7 +335,7 @@ a:hover {
 }
 
 .footer a:hover {
-  background-color: #ffa500;
+  background-color: #3e8de3;
   color: white;
 }
 .dark-mode .footer {
