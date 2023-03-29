@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <style>
-  h2 {text-align: center;}
-  </style>
+    <style>
+      h2 {text-align: center;}
+      .image-caption {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
     <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
     <title>Mini Chicken Meatball, Pasta, and Vegetable Soup - Din Din Delights</title>
+		<title>Ingredient Amount Converter</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  
   <body>
     <nav class="navbar">
       <div class="navbar-left">
@@ -28,9 +37,126 @@
         <button class="dark-mode-button"></button>
       </div>
     </nav>
-    <h2 style="font-size: 30px;">Mini Chicken Meatball, Pasta, and Vegetable Soup</h2>
-
-    <footer class="footer">
+    <div class="recipe">
+      <h2 style="font-size: 30px;">Mini Chicken Meatball, Pasta, and Vegetable Soup</h2>
+      <img src="lunch recipe 1.jpg" alt="Mini Chicken Meatball, Pasta, and Vegetable Soup" width="400" height="250">
+      <div class="text-container">
+        <p><i class="far fa-clock"></i>Total Time: 1 hour 20 minutes</p>
+      </div>
+    </div>
+    <div class="text-container-2">
+      <p><i class="fas fa-info-circle"></i> Recipe Info: </p>
+				<ul class="a">
+			  <li>Course: Soup</li>
+				<li>Cuisine: American</li>
+				<li>Servings: 1</li>
+        <li>Equipment: Large Dutch oven</li>
+			</ul>
+    </div>
+    <div class="print-button">
+      <div>
+        <button onClick="window.print()"><i class="fas fa-print"></i> Print this page </button>
+      </div>    
+    </div>
+    <div class="converter-container">
+      <h1>Ingredient Amount Converter</h1>
+      <div class="form-container">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" name="amount">
+				<div class="amount-label">
+					<label class="unit-from-label" for="convert-from">Convert From:</label>
+					<select class="unit-from" name="unit-from" id="unit-from">
+            <optgroup label="Volume">
+              <option value="tsp">Teaspoons (Imperial)</option>
+              <option value="tbsp">Tablespoons (Imperial)</option>
+              <option value="fl-oz">Fluid Ounces (Imperial)</option>
+              <option value="cup">Cups (Imperial)</option>
+              <option value="pt">Pints (Imperial)</option>
+              <option value="qt">Quarts (Imperial)</option>
+              <option value="gal">Gallons (Imperial)</option>
+              <option value="ml">Milliliters (Metric)</option>
+              <option value="cl">Centiliters (Metric)</option>
+              <option value="dl">Deciliters (Metric)</option>
+              <option value="l">Liters (Metric)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="oz">Ounces (Imperial)</option>
+              <option value="lb">Pounds (Imperial)</option>
+              <option value="g">Grams (Metric)</option>
+              <option value="kg">Kilograms (Metric)</option>
+            </optgroup>
+        </select>
+				</div>
+				<div class="amount-label">
+					<label class="unit-to-label" for="unit-to">Convert To:</label>
+					<select class="unit-to" name="unit-to" id="unit-to">
+            <optgroup label="Volume">
+              <option value="tsp">Teaspoons (Imperial)</option>
+              <option value="tbsp">Tablespoons (Imperial)</option>
+              <option value="fl-oz">Fluid Ounces (Imperial)</option>
+              <option value="cup">Cups (Imperial)</option>
+              <option value="pt">Pints (Imperial)</option>
+              <option value="qt">Quarts (Imperial)</option>
+              <option value="gal">Gallons (Imperial)</option>
+              <option value="ml">Milliliters (Metric)</option>
+              <option value="cl">Centiliters (Metric)</option>
+              <option value="dl">Deciliters (Metric)</option>
+              <option value="l">Liters (Metric)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="oz">Ounces (Imperial)</option>
+              <option value="lb">Pounds (Imperial)</option>
+              <option value="g">Grams (Metric)</option>
+              <option value="kg">Kilograms (Metric)</option>
+            </optgroup>
+        </select>
+				</div>
+        <button id="convert-btn">Convert</button>
+      </div>
+      <div class="result-container">
+        <div id="result"></div>
+      </div>
+    </div>
+		<div class="text-container-3">
+      <p><i class="fas fa-info-circle"></i> Ingredients: </p>
+			<ul class="a">
+			  <li>Meatballs:</li>
+				<li>•	0.17 lb of ground chicken</li>
+				<li>•	1 egg</li>
+				<li>•	0.33-0.5 tbsp Parmesan cheese</li>
+				<li>•	0.17-0.33 cloves of garlic minced</li>
+				<li>•	0.17 tbsp fresh parsley chopped</li>
+        <li>•	0.08 tsp dried basil</li>
+        <li>•	0.04 tsp dried oregano</li>
+        <li>•	Sea salt and freshly cracked pepper to taste</li>
+        <li>•	0.04 cup of Italian seasoned panko crumbs</li>
+        <li>•	0.17 tbsp canola oil</li>
+        <li>Soup:</li>
+        <li>•	0.17 tbsp canola oil</li>
+        <li>•	0.08 sweet yellow onion diced</li>
+        <li>•	0.5 carrots peeled and diced</li>
+        <li>•	0.5 stalks of celery diced</li>
+        <li>•	0.5 cloves of garlic minced</li>
+        <li>•	2.67 oz can of diced tomatoes</li>
+        <li>•	1.33 cups of chicken broth</li>
+        <li>•	Sea salt and freshly cracked pepper to taste</li>
+        <li>•	0.08 cup of pasta</li>
+        <li>•	0.33 cups of fresh baby spinach</li>
+        <li>•	Parmesan cheese or feta cheese as topping optional</li>
+			</ul>
+    </div>
+		<div class="text-container-4">
+      <p><i class="fas fa-info-circle"></i> Instructions: </p>
+				<ul class="a">
+			  <li>1. Combine the ground chicken, egg, Parmesan cheese, minced garlic, fresh parsley, dried basil, dried oregano, sea salt, and freshly cracked pepper, to taste, and Italian seasoned panko crumbs together in a bowl until just combined. Roll into mini meatballs and place onto a plate (I filled up two plates full). Place the meatballs into the refrigerator for 10 minutes so they are easier to work with.</li>
+        <li>2. Heat 1 tablespoon of canola oil in a large Dutch oven over medium-high heat. Add the meatballs, in batches, and cook for 4-5 minutes, carefully turning halfway through to cook on the other side, or until golden brown but not cooked all the way through (they will finish cooking in the soup). Remove the cooked meatballs from the Dutch oven and place them on a clean plate. Finish cooking the remaining meatballs.</li>
+        <li>3. Add the remaining tablespoon of canola oil to the same Dutch oven and add the onion, carrots, and celery. Cook, stirring often, for 4-5 minutes then add the minced garlic. Cook, stirring constantly, for 1 minute then add the diced tomatoes and chicken broth, season with sea salt and freshly cracked pepper, to taste.</li>
+        <li>4. Cover and cook on low for 30-40 minutes.</li>
+        <li>5. Remove the lid and add the pasta and meatballs. Cover and cook for an additional 15-20 minutes or until the pasta is tender and the meatballs are cooked through.</li>
+        <li>6. Add the spinach, stir until combined and slightly wilted, taste and re-season if needed, then ladle into bowls. Top with Parmesan cheese or feta cheese if desired. Enjoy!</li>
+      </ul>
+    </div>
+		    <footer class="footer">
       <div class="footer-left">
         <p>© 2023 Din Din Delights. All Rights Reserved.</p>
       </div>
@@ -44,6 +170,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="converter.js"></script>
   </body>
 </html>

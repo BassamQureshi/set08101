@@ -36,6 +36,8 @@ a:hover {
   background-color: #263166;
   padding: 10px;
   transition: all 0.5s ease-in-out;
+	font-size:25px;
+
 }
 
 .navbar-center {
@@ -43,6 +45,7 @@ a:hover {
   text-align: center;
   /*Centered text color when not in dark mode*/
   color: black;
+	
 }
 
 .navbar.scroll {
@@ -378,7 +381,9 @@ a:hover {
   border: 2px solid black;
   padding: 5px;
   width: 220px; 
+  height: 55px;
 }
+
 .text-container-2 {
   display: inline-block;
   vertical-align: top;
@@ -389,6 +394,30 @@ a:hover {
   width: 464px;
   height: 165px;
 }
+
+.text-container-3 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-left: 0px;
+  border: 2px solid black;
+  padding: 5px;
+  width: 625px;
+  height: 100% auto;	
+}
+
+.text-container-4 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -192px;
+  margin-left: 645px;
+  border: 2px solid black;
+  padding: 6px;
+  width: 750px;
+  height: 100% auto;
+}
+
+
 
 .print-button button{
   background-color: #AAABB8; /* Change background color */
@@ -401,11 +430,11 @@ a:hover {
   padding: 5px;
   vertical-align: top;
   margin-top: -272px;
-  margin-left: 645px;
+  margin-left: 640px;
   border: 2px solid black;
   padding: 5px;
-  width: 237px;
-  height: 65px;
+  width: 242px;
+  height: 68px;
 }
 
 .print-button button:hover {
@@ -500,6 +529,15 @@ button {
   width: 10%;
   text-align: left;
 	display: inline;
+}
+
+select#unit-from, select#unit-to {
+	font-size: 16px;
+	padding: 5px;
+}
+
+ul.a {
+	list-style-type: none;
 }
 
 /*#amount{
