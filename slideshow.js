@@ -1,5 +1,3 @@
-
-
 const navbar = document.querySelector('.navbar');
 const darkModeButton = document.querySelector('.dark-mode-button');
 
