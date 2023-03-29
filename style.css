@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: consolas Black, sans-serif;
   transition: all 0.5s ease-in-out;
   color: black;
   padding-bottom: 0px; /* add this line */
-  min-height: 100%; /* set minimum height of body to 100% viewport height */
+  max-height: 100%; /* set minimum height of body to 100% viewport height */
   position: relative; /* make body a positioned element for footer placement */ 
   
 }
@@ -34,9 +34,9 @@ a:hover {
   align-items: center;
   /*Flex box/nav bar background color*/
   background-color: #263166;
-  padding: 10px;
+  padding: 8px;
   transition: all 0.5s ease-in-out;
-	font-size:25px;
+	font-size: 20px;
 
 }
 
@@ -399,14 +399,14 @@ a:hover {
   display: inline-block;
   vertical-align: top;
   margin-top: 2px;
-  margin-left: 0px;
+  margin-left: 1px;
   border: 2px solid black;
   padding: 5px;
   width: 625px;
   height: 100% auto;	
 }
 
-.text-container-4 {
+/* .text-container-4 {
   display: inline-block;
   vertical-align: top;
   margin-top: -192px;
@@ -415,7 +415,7 @@ a:hover {
   padding: 6px;
   width: 750px;
   height: 100% auto;
-}
+} */
 
 
 
