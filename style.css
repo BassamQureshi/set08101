@@ -236,7 +236,7 @@ a:hover {
   z-index: 2;
   position: absolute;
   display: flex;
-  bottom: 30px;
+  bottom: 310px; /*This value adjusts the psotion of the three image slider buttons.*/
   left: 50%;
   transform: translateX(-50%);
 }
