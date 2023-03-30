@@ -8,6 +8,11 @@ body {
   /*max-height: 100% auto;*/
   position: relative;
   /*width: fit-content;*/
+
+  background-image: url("page-background-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #home{
@@ -205,6 +210,7 @@ a:hover {
   height: 500px;
   margin: 50px;
   background: transparent;/*changes the background colour behind the image slider*/
+  padding-bottom: 294px; /*Setting this value so that the home page slidedshow puts the footer in the correct place in mobile view*/
 }
 
 .img-slider .slide{
@@ -559,3 +565,10 @@ ul.a {
     border: 2px solid black;
   
 }
+
+/* #page-background-image{
+  background-image: url("background image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
