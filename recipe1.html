@@ -14,18 +14,7 @@
       }
 
       h1 {font-size: 25px;}
-
-      .recipe-1-text-container-4{
-        display: inline-block;
-        vertical-align: top;
-        margin-top: -271px;
-        margin-left: 645px;
-        border: 2px solid black;
-        padding: 6px;
-        width: 750px;
-        height: 100% auto;
-      }
-
+      
     </style>
     <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
     <title>Fluffy Scrambled Eggs and Avocado Slices on Toast - Din Din Delights</title>
@@ -53,8 +42,8 @@
     </nav>
     <div class="recipe">
       <h2 style="font-size: 30px;">Fluffy Scrambled Eggs and Avocado Slices on Toast</h2>
-      <img src="breakfast recipe 1.jpg" alt="Fluffy Scrambled Eggs and Avocado Slices on Toast" width="400" height="250">
-      <div class="text-container">
+      <img id="recipe-image" src="breakfast recipe 1.jpg" alt="Fluffy Scrambled Eggs and Avocado Slices on Toast">
+      <div class="text-container-1">
         <p><i class="far fa-clock"></i> Total Time: 10 Minutes</p>
       </div>
     </div>
@@ -71,65 +60,7 @@
         <button onClick="window.print()"><i class="fas fa-print"></i> Print Recipe </button>
       </div>    
     </div>
-    <div class="converter-container">
-      <h1>Ingredient Measurement Converter</h1>
-      <div class="form-container">
-        <label for="amount">Enter Amount:</label>
-        <input type="number" id="amount" name="amount">
-				<div class="amount-label">
-					<label class="unit-from-label" for="convert-from">Convert From:</label>
-					<select class="unit-from" name="unit-from" id="unit-from">
-            <optgroup label="Volume">
-              <option value="tsp">Teaspoons (Imperial)</option>
-              <option value="tbsp">Tablespoons (Imperial)</option>
-              <option value="fl-oz">Fluid Ounces (Imperial)</option>
-              <option value="cup">Cups (Imperial)</option>
-              <option value="pt">Pints (Imperial)</option>
-              <option value="qt">Quarts (Imperial)</option>
-              <option value="gal">Gallons (Imperial)</option>
-              <option value="ml">Milliliters (Metric)</option>
-              <option value="cl">Centiliters (Metric)</option>
-              <option value="dl">Deciliters (Metric)</option>
-              <option value="l">Liters (Metric)</option>
-            </optgroup>
-            <optgroup label="Weight">
-              <option value="oz">Ounces (Imperial)</option>
-              <option value="lb">Pounds (Imperial)</option>
-              <option value="g">Grams (Metric)</option>
-              <option value="kg">Kilograms (Metric)</option>
-            </optgroup>
-        </select>
-				</div>
-				<div class="amount-label">
-					<label class="unit-to-label" for="unit-to">Convert To:</label>
-					<select class="unit-to" name="unit-to" id="unit-to">
-            <optgroup label="Volume">
-              <option value="tsp">Teaspoons (Imperial)</option>
-              <option value="tbsp">Tablespoons (Imperial)</option>
-              <option value="fl-oz">Fluid Ounces (Imperial)</option>
-              <option value="cup">Cups (Imperial)</option>
-              <option value="pt">Pints (Imperial)</option>
-              <option value="qt">Quarts (Imperial)</option>
-              <option value="gal">Gallons (Imperial)</option>
-              <option value="ml">Milliliters (Metric)</option>
-              <option value="cl">Centiliters (Metric)</option>
-              <option value="dl">Deciliters (Metric)</option>
-              <option value="l">Liters (Metric)</option>
-            </optgroup>
-            <optgroup label="Weight">
-              <option value="oz">Ounces (Imperial)</option>
-              <option value="lb">Pounds (Imperial)</option>
-              <option value="g">Grams (Metric)</option>
-              <option value="kg">Kilograms (Metric)</option>
-            </optgroup>
-        </select>
-				</div>
-        <button id="convert-btn">Convert</button>
-      </div>
-      <div class="result-container">
-        <div id="result"></div>
-      </div>
-    </div>
+
 		<div class="text-container-3">
       <p><i class="fas fa-info-circle"></i> Ingredients: </p>
 			<ul class="a">
@@ -141,7 +72,7 @@
 				<p>•	Avocado sliced</p>
 			</ul>
     </div>
-		<div class="recipe-1-text-container-4">
+		<div class="text-container-4">
       <p><i class="fas fa-info-circle"></i> Instructions: </p>
 				<ul class="a">
 			  <p>1. Heat the cooking spray in a skillet over medium heat. Whisk the eggs together with the milk, sea salt, and freshly cracked pepper, to taste.</p>
@@ -150,6 +81,65 @@
 				<p>4. Layer the scrambled egg on top of the buttered toast followed by slices of avocado. Season with sea salt and freshly cracked pepper, to taste. Serve immediately. Enjoy!</p>
 			</ul>
     </div>
+    <div class="converter-container">
+        <h1>Ingredient Measurement Converter</h1>
+        <div class="form-container">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" name="amount">
+                  <div class="amount-label">
+                      <label class="unit-from-label" for="convert-from">Convert From:</label>
+                      <select class="unit-from" name="unit-from" id="unit-from">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+                  <div class="amount-label">
+                      <label class="unit-to-label" for="unit-to">Convert To:</label>
+                      <select class="unit-to" name="unit-to" id="unit-to">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div class="result-container">
+          <div id="result"></div>
+        </div>
+      </div>
 		    <footer class="footer">
       <div class="footer-left">
         <p>© 2023 Din Din Delights. All Rights Reserved.</p>

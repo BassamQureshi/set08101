@@ -318,6 +318,7 @@ a:hover {
 .img-slider .slide img {
   width: 100%; /* Ensure the images fill the width of the slider container */
 }
+
 /* Footer styles */
 .footer {
   background-color: #263166;
@@ -327,7 +328,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 135px;
   height: 50px;
 }
 
@@ -375,7 +376,7 @@ a:hover {
 
 }
 
-.text-container {
+.text-container-1 {
   display: inline-block;
   vertical-align: top;
   margin-left: -5px;
@@ -399,12 +400,23 @@ a:hover {
 .text-container-3 {
   display: inline-block;
   vertical-align: top;
-  margin-top: 2px;
-  margin-left: 1px;
+  margin-top: 10px;
+  margin-left: 190px;
   border: 2px solid black;
   padding: 5px;
   width: 625px;
   height: 100% auto;	
+}
+
+.text-container-4{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 130px;
+  border: 2px solid black;
+  padding: 6px;
+  width: 750px;
+  height: 100% auto;
 }
 
 /* .text-container-4 {
@@ -441,16 +453,18 @@ a:hover {
 .print-button button:hover {
   background-color: #808295; /* Change background color on hover */
 }
-/* .converter-container {
+
+.converter-container {
   background-color: transparent;
   border: 2px solid black;
-  padding: 11px;
-  max-width: 400px;
-  margin-left: 885px;
-	margin-top: -291px;
+  padding: 5px;
+  /*max-width: 400px;*/
+  margin-left: 260px;
+  margin-top: 5px;
   width: 500px;
   height: 224px;
-} */
+  }
+  
 
 
 label {
