@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {text-align: center;}
+      .image-caption {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      h1 {font-size: 25px;}
+
+      .recipe-1-text-container-4{
+        display: inline-block;
+        vertical-align: top;
+        /*margin-top: -271px;*/
+        /*margin-left: 645px;*/
+        border: 2px solid black;
+        padding: 6px;
+        width: 750px;
+        height: 100% auto;
+      }
+      .converter-container {
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 11px;
+        /*max-width: 400px;*/
+        /*margin-left: 885px;*/
+        /*margin-top: -291px;*/
+        width: 500px;
+        height: 224px;
+        }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
+    <title>Fluffy Scrambled Eggs and Avocado Slices on Toast - Din Din Delights</title>
+		<title>Ingredient Measurement Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+      <div class="navbar-center">
+        <p>Din Din Delights</p>
+      </div>
+      <div class="navbar-right">
+        <form class="search-form" action="#" method="get">
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <button class="dark-mode-button"></button>
+      </div>
+    </nav>
+    <div class="recipe">
+      <h2 style="font-size: 30px;">Fluffy Scrambled Eggs and Avocado Slices on Toast</h2>
+      <img id="recipe-image" src="breakfast recipe 1.jpg" alt="Fluffy Scrambled Eggs and Avocado Slices on Toast">
+      <div class="text-container">
+        <p><i class="far fa-clock"></i> Total Time: 10 Minutes</p>
+      </div>
+    </div>
+    <div class="text-container-2">
+      <p><i class="fas fa-info-circle"></i> Recipe Info: </p>
+				<ul class="a">
+			  <li>Course: Breakfast</li>
+				<li>Cuisine: American</li>
+				<li>Servings: 1</li>
+			</ul>
+    </div>
+    <div class="print-button">
+      <div>
+        <button onClick="window.print()"><i class="fas fa-print"></i> Print Recipe </button>
+      </div>    
+    </div>
+    <div class="converter-container">
+      <h1>Ingredient Measurement Converter</h1>
+      <div class="form-container">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" name="amount">
+				<div class="amount-label">
+					<label class="unit-from-label" for="convert-from">Convert From:</label>
+					<select class="unit-from" name="unit-from" id="unit-from">
+            <optgroup label="Volume">
+              <option value="tsp">Teaspoons (Imperial)</option>
+              <option value="tbsp">Tablespoons (Imperial)</option>
+              <option value="fl-oz">Fluid Ounces (Imperial)</option>
+              <option value="cup">Cups (Imperial)</option>
+              <option value="pt">Pints (Imperial)</option>
+              <option value="qt">Quarts (Imperial)</option>
+              <option value="gal">Gallons (Imperial)</option>
+              <option value="ml">Milliliters (Metric)</option>
+              <option value="cl">Centiliters (Metric)</option>
+              <option value="dl">Deciliters (Metric)</option>
+              <option value="l">Liters (Metric)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="oz">Ounces (Imperial)</option>
+              <option value="lb">Pounds (Imperial)</option>
+              <option value="g">Grams (Metric)</option>
+              <option value="kg">Kilograms (Metric)</option>
+            </optgroup>
+        </select>
+				</div>
+				<div class="amount-label">
+					<label class="unit-to-label" for="unit-to">Convert To:</label>
+					<select class="unit-to" name="unit-to" id="unit-to">
+            <optgroup label="Volume">
+              <option value="tsp">Teaspoons (Imperial)</option>
+              <option value="tbsp">Tablespoons (Imperial)</option>
+              <option value="fl-oz">Fluid Ounces (Imperial)</option>
+              <option value="cup">Cups (Imperial)</option>
+              <option value="pt">Pints (Imperial)</option>
+              <option value="qt">Quarts (Imperial)</option>
+              <option value="gal">Gallons (Imperial)</option>
+              <option value="ml">Milliliters (Metric)</option>
+              <option value="cl">Centiliters (Metric)</option>
+              <option value="dl">Deciliters (Metric)</option>
+              <option value="l">Liters (Metric)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="oz">Ounces (Imperial)</option>
+              <option value="lb">Pounds (Imperial)</option>
+              <option value="g">Grams (Metric)</option>
+              <option value="kg">Kilograms (Metric)</option>
+            </optgroup>
+        </select>
+				</div>
+        <button id="convert-btn">Convert</button>
+      </div>
+      <div class="result-container">
+        <div id="result"></div>
+      </div>
+    </div>
+		<div class="text-container-3">
+      <p><i class="fas fa-info-circle"></i> Ingredients: </p>
+			<ul class="a">
+			  <p>•	Cooking spray</p>
+				<p>•	2 eggs</p>
+				<p>•	0.5 tbsp milk</p>
+				<p>•	Sea salt and freshly cracked pepper to taste</p>
+				<p>•	1 pieces of bread toasted & buttered</p>
+				<p>•	Avocado sliced</p>
+			</ul>
+    </div>
+		<div class="recipe-1-text-container-4">
+      <p><i class="fas fa-info-circle"></i> Instructions: </p>
+				<ul class="a">
+			  <p>1. Heat the cooking spray in a skillet over medium heat. Whisk the eggs together with the milk, sea salt, and freshly cracked pepper, to taste.</p>
+				<p>2. Pour in the egg mixture. Constantly fold the egg mixture from the bottom of the pan to the top. This will keep it from overcooking and the middle section will stay soft and fluffy. Do this constantly for 1 or 2 minutes, or until the eggs are cooked to your liking.</p>
+				<p>3. Meanwhile, place your bread into the toaster and toast; butter the toast when finished. Slice the avocado into slices.</p>
+				<p>4. Layer the scrambled egg on top of the buttered toast followed by slices of avocado. Season with sea salt and freshly cracked pepper, to taste. Serve immediately. Enjoy!</p>
+			</ul>
+    </div>
+		    <footer class="footer">
+      <div class="footer-left">
+        <p>© 2023 Din Din Delights. All Rights Reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="footer-right">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="converter.js"></script>
+  </body>
+</html>
