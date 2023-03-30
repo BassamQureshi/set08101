@@ -4,10 +4,10 @@ body {
   font-family: consolas Black, sans-serif;
   transition: all 0.5s ease-in-out;
   color: black;
-  padding-bottom: 0px; /* add this line */
-  max-height: 100%; /* set minimum height of body to 100% viewport height */
-  position: relative; /* make body a positioned element for footer placement */ 
-  
+  padding-bottom: 0px;
+  /*max-height: 100% auto;*/
+  position: relative;
+  /*width: fit-content;*/
 }
 
 #home{
@@ -319,15 +319,15 @@ a:hover {
 }
 /* Footer styles */
 .footer {
-  position: absolute; /* position footer absolutely */
-  bottom: -100%; /* position footer at the bottom of the page */
-  width: 100%; /* make footer the full width of the page */
-  height: 100px; /* set height of footer */
-  background-color: #263166; /* set background color of footer */
-  color: black; /* set text color of footer */
-  display: flex; /* use flexbox for content alignment */
-  justify-content: space-around; /* horizontally center content */
-  align-items: center; /* vertically center content */
+  background-color: #263166;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  height: 50px;
 }
 
 .footer a {
@@ -538,6 +538,12 @@ select#unit-from, select#unit-to {
 
 ul.a {
 	list-style-type: none;
+}
+@media print {
+  @page {
+    size: landscape;
+  }
+  
 }
 
 /*#amount{
