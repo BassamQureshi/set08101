@@ -210,7 +210,7 @@ a:hover {
   height: 500px;
   margin: 50px;
   background: transparent;/*changes the background colour behind the image slider*/
-  padding-bottom: 662px; /*Setting this value so that the home page slidedshow puts the footer in the correct place in mobile view*/
+  padding-bottom: 665px; /*Setting this value so that the home page slidedshow puts the footer in the correct place in mobile view*/
 }
 
 .img-slider .slide{
@@ -236,7 +236,7 @@ a:hover {
   z-index: 2;
   position: absolute;
   display: flex;
-  bottom: 674px; /*This value adjusts the psotion of the three image slider buttons.*/
+  bottom: 677px; /*This value adjusts the psotion of the three image slider buttons.*/
   left: 50%;
   transform: translateX(-50%);
 }
