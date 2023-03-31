@@ -5,9 +5,7 @@ body {
   transition: all 0.5s ease-in-out;
   color: black;
   padding-bottom: 0px;
-  /*max-height: 100% auto;*/
   position: relative;
-  /*width: fit-content;*/
 
   background-image: url("page-background-3.jpeg");
   background-repeat: no-repeat;
@@ -517,10 +515,6 @@ button {
   margin-top: 20px;
 }
 
-/*select#unit-from, select#unit-to {
-  font-size: 14px;
-  padding: 5px;
-}*/
 .amount-label {
   display: inline-table;
   justify-content: space-between;
@@ -551,7 +545,9 @@ ul.a {
   @page {
     size: portrait;
   }
-  
+  body{
+    background-image: none;
+  }
 }
 
 /*#amount{
@@ -565,10 +561,3 @@ ul.a {
     border: 2px solid black;
   
 }
-
-/* #page-background-image{
-  background-image: url("background image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
