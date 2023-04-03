@@ -40,7 +40,7 @@ a:hover {
   background-color: #263166;
   padding: 8px;
   transition: all 0.5s ease-in-out;
-	font-size: 20px;
+    font-size: 20px;
   /*width: 200% auto; this might work to keep the nav bar a good size width on mobile*/
 
 }
@@ -50,7 +50,7 @@ a:hover {
   text-align: center;
   /*Centered text color when not in dark mode*/
   color: black;
-	
+    
 }
 
 .navbar.scroll {
@@ -444,12 +444,12 @@ a:hover {
 .text-container-2 {
   display: inline-block;
   vertical-align: top;
-  margin-top: -183px;
+  margin-top: -185px;
   margin-left: 508px;
   border: 2px solid black;
   padding: 5px;
   width: 432px;
-  height: 165px;
+  height: 167px;
 }
 
 .text-container-3 {
@@ -473,6 +473,10 @@ a:hover {
   width: 750px;
   height: 100% auto;
 }
+
+/* .text-container-recipe-1{
+
+} */
 
 .print-button button{
   background-color: #AAABB8; /* Change background color */
@@ -514,15 +518,15 @@ label {
   font-size: 20px;
   width: 120px;
   height: 20px;
-	
+    
 }
 
 input {
   width: 120px;
   margin-right: 0px;
   height: 20px;
-	margin-bottom: 10px;
-	
+    margin-bottom: 10px;
+    
 }
 
 button {
@@ -575,22 +579,22 @@ button {
 
 .unit-from, .unit-to {
   width: 220px;
-	display: inline-block;
+    display: inline-block;
 }
 
 .unit-from-label, .unit-to-label {
   width: 10%;
   text-align: left;
-	display: inline;
+    display: inline;
 }
 
 select#unit-from, select#unit-to {
-	font-size: 16px;
-	padding: 5px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 ul.a {
-	list-style-type: none;
+    list-style-type: none;
 }
 @media print {
   @page {
@@ -620,4 +624,50 @@ ul.a {
   float: none;
   display: inline-block;
   vertical-align: middle;
+}
+
+/*Recipe slideshows css starts here ****************************************** */
+
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+/* img {vertical-align: middle;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  width: 100%;
+  } */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  /* padding-bottom: 100px; */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: grey;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
