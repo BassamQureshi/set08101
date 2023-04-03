@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {text-align: center;}
+
+      h1 {font-size: 25px;}
+      
+    </style>
+    <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
+    <title>One-Pan Roast Dinner - Din Din Delights</title>
+		<title>Ingredient Measurement Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+      <div class="navbar-center">
+        <p>Din Din Delights</p>
+      </div>
+      <div class="navbar-right">
+        <form class="search-form" action="#" method="get">
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <button class="dark-mode-button"></button>
+      </div>
+    </nav>
+    <div class="recipe">
+      <h2 style="font-size: 30px;">One-Pan Roast Dinner</h2>
+      <img id="recipe-image" src="dinner recipe 3.jpg" alt="One-Pan Roast Dinner">
+      <div class="text-container-1">
+        <p><i class="fas fa-clock"></i> Cook Time: 1 Hour 20 Minutes</p>
+      </div>
+    </div>
+    <div class="text-container-2">
+      <p><i class="fas fa-info-circle"></i> Recipe Info: </p>
+		<ul class="a">
+            <li>Course: Dinner</li>
+            <li>Serves: 4</li>
+            <li>Prep-time: 20 Minutes</li>
+            <li>Difficulty: Easy </li>
+		</ul>
+    </div>
+    <div class="print-button">
+      <div>
+        <button onClick="window.print()"><i class="fas fa-print"></i> Print Recipe </button>
+      </div>    
+    </div>
+
+		<div class="text-container-3">
+      <p><i class="fas fa-info-circle"></i> Ingredients: </p>
+			<ul class="a">
+			  <p>•	1½ kg chicken</p>
+              <p>•	1 lemon, halved</p>
+              <p>•	50g softened butter</p>
+              <p>•	2 tsp dried mixed herbs</p>
+              <p>•	750g potatoes, chopped into roast potato sizes</p>
+              <p>•	About 7 carrots, roughly 500g, each chopped into 2-3 chunks</p>
+              <p>•	2 tbsp olive oil</p>
+              <p>•	100g frozen peas</p>
+              <p>•	300ml chicken stock</p>
+              <p>•	1 tsp Marmite (optional)</p>
+			</ul>
+    </div>
+		<div class="text-container-4">
+      <p><i class="fas fa-info-circle"></i> Instructions: </p>
+				<ul class="a">
+          <p>1.	Heat oven to 220C/200C fan/gas 7. Snip the string or elastic off the chicken if it’s tied up, then place in a big roasting tin. Shove the lemon halves into the cavity. Rub the butter, herbs and seasoning all over the chicken. Put the potatoes and carrots around it, drizzle everything with oil, season and toss together.</p>
+          <p>2.	Roast for 20 mins, then turn the oven down to 200C/180C fan/gas 6 and roast for 50 mins more. Stir the peas, stock and Marmite into the veg in the tin, then return to the oven for 10 mins more.</p>
+			</ul>
+    </div>
+    <div class="converter-container">
+        <h1>Ingredient Measurement Converter</h1>
+        <div class="form-container">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" name="amount">
+                  <div class="amount-label">
+                      <label class="unit-from-label" for="convert-from">Convert From:</label>
+                      <select class="unit-from" name="unit-from" id="unit-from">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+                  <div class="amount-label">
+                      <label class="unit-to-label" for="unit-to">Convert To:</label>
+                      <select class="unit-to" name="unit-to" id="unit-to">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div class="result-container">
+          <div id="result"></div>
+        </div>
+      </div>
+		    <footer class="footer">
+      <div class="footer-left">
+        <p>© 2023 Din Din Delights. All Rights Reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="footer-right">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="converter.js"></script>
+  </body>
+</html>

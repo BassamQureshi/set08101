@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {text-align: center;}
+
+      h1 {font-size: 25px;}
+      
+    </style>
+    <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
+    <title>Vegetarian Lasagne - Din Din Delights</title>
+		<title>Ingredient Measurement Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+      </div>
+      <div class="navbar-center">
+        <p>Din Din Delights</p>
+      </div>
+      <div class="navbar-right">
+        <form class="search-form" action="#" method="get">
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <button class="dark-mode-button"></button>
+      </div>
+    </nav>
+    <div class="recipe">
+      <h2 style="font-size: 30px;">Vegetarian Lasagne</h2>
+      <img id="recipe-image" src="lunch recipe 3.jpg" alt="Vegetarian Lasagne">
+      <div class="text-container-1">
+        <p><i class="fas fa-clock"></i> Cook Time: 1 Hour 10 Minutes </p>
+      </div>
+    </div>
+    <div class="text-container-2">
+      <p><i class="fas fa-info-circle"></i> Recipe Info: </p>
+		<ul class="a">
+            <li>Course: Lunch</li>
+            <li>Serves: 6</li>
+            <li>Prep-time: 25 Minutes</li>
+            <li>Difficulty: Easy </li>
+            <li>Ⓥ Vegetarian</li>
+		</ul>
+    </div>
+    <div class="print-button">
+      <div>
+        <button onClick="window.print()"><i class="fas fa-print"></i> Print Recipe </button>
+      </div>    
+    </div>
+
+		<div class="text-container-3">
+      <p><i class="fas fa-info-circle"></i> Ingredients: </p>
+			<ul class="a">
+			  <p>•	3 red peppers, cut into large chunks</p>
+              <p>•	2 aubergines, cut into ½ cm thick slices</p>
+              <p>•	8 tbsp olive oil, plus extra for the dish</p>
+              <p>•	300g lasagne sheets</p>
+              <p>•	125g mozzarella</p>
+              <p>•	handful cherry tomatoes, halved</p>
+              <p>For The Tomato Sauce: </p>
+              <p>•	1 tbsp olive oil</p>
+              <p>•	2 onions, finely chopped</p>
+              <p>•	2 garlic cloves, sliced</p>
+              <p>•	1 carrot, roughly chopped</p>
+              <p>•	2 tbsp tomato purée</p>
+              <p>•	200ml white wine</p>
+              <p>•	3 x 400g cans chopped tomatoes</p>
+              <p>•	1 bunch of basil, leaves picked</p>
+              <p>For The White Sauce: </p>
+              <p>•	85g butter</p>
+              <p>•	85g plain flour</p>
+              <p>•	750ml milk</p>
+			</ul>
+    </div>
+		<div class="text-container-4">
+      <p><i class="fas fa-info-circle"></i> Instructions: </p>
+				<ul class="a">
+          <p>1.	To make the tomato sauce, heat the olive oil in a saucepan. Add the onions, garlic and carrot. Cook for 5-7 mins over a medium heat until softened. Turn up the heat a little and stir in the tomato purée. Cook for 1 min, pour in the white wine, then cook for 5 mins until this has reduced by two-thirds. Pour over the chopped tomatoes and add the basil leaves. Bring to the boil then simmer for 20 mins. Leave to cool then whizz in a food processor. Will keep, cooled, in the fridge for up to three days or frozen for three months.</p>
+          <p>2.	To make the white sauce, melt the butter in a saucepan, stir in the plain flour, then cook for 2 mins. Slowly whisk in the milk, then bring to the boil, stirring. Turn down the heat, then cook until the sauce starts to thicken and coats the back of a wooden spoon. Will keep, cooled, in the fridge for up to three days or frozen for three months.</p>
+          <p>3.	Heat the oven to 200C/180C fan/gas 6. Lightly oil two large baking trays and add the peppers and aubergines. Toss with the olive oil, season well, then roast for 25 mins until lightly browned.</p>
+          <p>4.	Reduce the oven to 180C/160C fan/gas 4. Lightly oil a 30 x 20cm ovenproof dish. Arrange a layer of the vegetables on the bottom, then pour over a third of the tomato sauce. Top with a layer of lasagne sheets, then drizzle over a quarter of the white sauce. Repeat until you have three layers of pasta.</p>
+          <p>5.	Spoon the remaining white sauce over the pasta, making sure the whole surface is covered, then scatter over the mozzarella and cherry tomatoes. Bake for 45 mins until bubbling and golden.</p>
+			</ul>
+    </div>
+    <div class="converter-container">
+        <h1>Ingredient Measurement Converter</h1>
+        <div class="form-container">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" name="amount">
+                  <div class="amount-label">
+                      <label class="unit-from-label" for="convert-from">Convert From:</label>
+                      <select class="unit-from" name="unit-from" id="unit-from">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+                  <div class="amount-label">
+                      <label class="unit-to-label" for="unit-to">Convert To:</label>
+                      <select class="unit-to" name="unit-to" id="unit-to">
+              <optgroup label="Volume">
+                <option value="tsp">Teaspoons (Imperial)</option>
+                <option value="tbsp">Tablespoons (Imperial)</option>
+                <option value="fl-oz">Fluid Ounces (Imperial)</option>
+                <option value="cup">Cups (Imperial)</option>
+                <option value="pt">Pints (Imperial)</option>
+                <option value="qt">Quarts (Imperial)</option>
+                <option value="gal">Gallons (Imperial)</option>
+                <option value="ml">Milliliters (Metric)</option>
+                <option value="cl">Centiliters (Metric)</option>
+                <option value="dl">Deciliters (Metric)</option>
+                <option value="l">Liters (Metric)</option>
+              </optgroup>
+              <optgroup label="Weight">
+                <option value="oz">Ounces (Imperial)</option>
+                <option value="lb">Pounds (Imperial)</option>
+                <option value="g">Grams (Metric)</option>
+                <option value="kg">Kilograms (Metric)</option>
+              </optgroup>
+          </select>
+                  </div>
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div class="result-container">
+          <div id="result"></div>
+        </div>
+      </div>
+		    <footer class="footer">
+      <div class="footer-left">
+        <p>© 2023 Din Din Delights. All Rights Reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="footer-right">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="converter.js"></script>
+  </body>
+</html>
