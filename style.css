@@ -105,7 +105,7 @@ a:hover {
 }
 
 .search-container button[type="submit"] {
-  background-color: grey;
+  background-color: white;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -113,7 +113,7 @@ a:hover {
 
 .fa-search {
   font-size: 20px;
-  color: #ccc;
+  /* color: #ccc; */
   background-color: white;
 }
 
@@ -629,11 +629,7 @@ ul.a {
 /*Recipe slideshows css starts here ****************************************** */
 
 .mySlides1, .mySlides2, .mySlides3 {display: none}
-/* img {vertical-align: middle;
-  padding-bottom: 100px;
-  padding-top: 50px;
-  width: 100%;
-  } */
+
 
 /* Slideshow container */
 .slideshow-container {

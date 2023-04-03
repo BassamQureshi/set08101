@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      h2 {text-align: center;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-
-      }
-   
-      h1 {
-        font-size: 20px;
-        text-align: center;
+    <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
+    <title>Home - Din Din Delights</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+      h1 {text-align: center;}
+      .image-caption {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
       }
       
-      img {vertical-align: middle;
-          /* padding-bottom: 100px; */
-          padding-top: 50px;
-          width: 100%;
-      }
-
-    </style>
-    <script src="https://kit.fontawesome.com/7d76db63fb.js" crossorigin="anonymous"></script>
-    <title>Recipes - Din Din Delights</title>
-    <link rel="stylesheet" href="style.css">
+  </style>
   </head>
-  <body>
+  
+  <body id="home">
     <nav class="navbar">
       <div class="navbar-left">
         <a href="index.html">Home</a>
@@ -36,116 +31,54 @@
       <div class="navbar-right">
         <form class="search-form" action="#" method="get">
           <div class="search-container">
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..." id="search-input">
             <button type="submit"><i class="fas fa-search"></i></button>
           </div>
         </form>
         <button class="dark-mode-button"></button>
       </div>
     </nav>
+    <h2 style="font-size: 30px;">Recomended Recipes:</h2>
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="breakfast recipe 1.jpg" alt="Fluffy Scrambled Eggs & Avocado Slices On Toast" >
+        <div class="info">
+          <h1 style="font-size:25px; background-color:#3a9bdc;">
+          <a href="recipe1.html">Fluffy Scrambled Eggs & Avocado Slices On Toast</a>  
+          </h1>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="lunch recipe 1.jpg" alt="Mini Chicken Meatball, Pasta, & Vegetable Soup">
+        <div class="info">
+          <h1 style="font-size:25px; background-color:#3a9bdc;">
+          <a href="recipe2.html">Mini Chicken Meatball, Pasta, & Vegetable Soup</a>  
+          </h1>        
+          </div>
+      </div>
+      <div class="slide">
+        <img src="dinner recipe 1.jpg" alt="Teriyaki Chicken & Vegetable Rice Bowl">
+        <div class="info">
+          <h1 style="font-size:25px; background-color:#3a9bdc;">
+          <a href="recipe3.html">Teriyaki Chicken & Vegetable Rice Bowl</a>
+          </h1>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
     
-<h2 style="font-size: 30px;">Breakfast Recipes</h2>
-<div class="slideshow-container">
-  <div class="mySlides1">
-		<img src="breakfast recipe 1.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe1.html">Fluffy Scrambled Eggs & Avocado Slices On Toast</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides1">
-		<img src="breakfast recipe 2.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe4.html">American Pancakes</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides1">
-		<img src="breakfast recipe 3.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe4.html">French Toast</a>  
-      </h1>
-    </div>
-  </div>
-
-  <p class="prev" onclick="plusSlides(-1, 0)">&#10094;</p>
-  <p class="next" onclick="plusSlides(1, 0)">&#10095;</p>
-</div>
-
-<h2 style="font-size: 30px;">Lunch Recipes</h2>
-<div class="slideshow-container">
-  <div class="mySlides2">
-		<img src="lunch recipe 1.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe2.html">Mini Chicken Meatball, Pasta, & Vegetable Soup</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides2">
-		<img src="lunch recipe 2.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe5.html">Prawn & Harissa Spaghetti</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides2">
-		<img src="lunch recipe 3.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe8.html">Vegetarian Lasagne</a>  
-      </h1>
-    </div>
-  </div>
-
-  <p class="prev" onclick="plusSlides(-1, 1)">&#10094;</p>
-  <p class="next" onclick="plusSlides(1, 1)">&#10095;</p>
-</div>
-
-<h2 style="font-size: 30px;">Dinner Recipes</h2>
-<div class="slideshow-container">
-  <div class="mySlides3">
-		<img src="dinner recipe 1.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe3.html">Teriyaki Chicken & Vegetable Rice Bowl</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides3">
-		<img src="dinner recipe 2.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe3.html">Crispy Japanese-Style Chicken Burgers</a>  
-      </h1>
-    </div>
-  </div>
-
-  <div class="mySlides3">
-		<img src="dinner recipe 3.jpg">
-    <div class="info">
-      <h1 style="font-size:25px; background-color: #3a9bdc;">
-      <a href="recipe3.html">One-Pan Roast Dinner</a>  
-      </h1>
-    </div>
-  </div>
-
-  <p class="prev" onclick="plusSlides(-1, 2)">&#10094;</p>
-  <p class="next" onclick="plusSlides(1, 2)">&#10095;</p>
-</div>
-
-
-
-		    <footer class="footer">
+    </script>
+  <div>
+    <div class="footer">
       <div class="footer-left">
         <p>© 2023 Din Din Delights. All Rights Reserved.</p>
       </div>
@@ -158,7 +91,9 @@
         <a href="#">Terms of Use</a>
         <a href="#">Privacy Policy</a>
       </div>
-    </footer>
-    <script src="recipe-slideshow.js"></script>
+    </div>
+  </div>
+
+    <script src="slideshow.js"></script>
   </body>
 </html>
