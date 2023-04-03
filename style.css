@@ -21,13 +21,13 @@ body {
 }
 
 a {
-  color: white;
+  color: black;
   padding: 0;
 }
 
 a:hover {
   background-color: #3e8de3; /* Change the background color on hover */
-  color: black; /* Change the text color on hover */
+  color: white; /* Change the text color on hover */
   padding: 0;
 
 }
@@ -650,7 +650,7 @@ ul.a {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -30px;
+  margin-top: -22px;
   color: orange;
   font-weight: bold;
   font-size: 18px;
