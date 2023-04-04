@@ -141,10 +141,17 @@ convertBtn.addEventListener("click", convertAmount);
 const navbar = document.querySelector('.navbar');
 const darkModeButton = document.querySelector('.dark-mode-button');
 
-// Toggle dark mode
+// Load dark mode preference from localStorage
+if (localStorage.getItem('dark-mode') === 'true') {
+  document.body.classList.add('dark-mode');
+  navbar.classList.add('dark-mode');
+}
+
+// Toggle dark mode and save preference to localStorage
 darkModeButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   navbar.classList.toggle('dark-mode');
+  localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
 });
 
 // Define recipe names and links
