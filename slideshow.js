@@ -50,7 +50,7 @@ var repeat = function(activeClass){
         return;
       }
       repeater();
-    }, 5000);
+    }, 3000);
   }
   repeater();
 }
