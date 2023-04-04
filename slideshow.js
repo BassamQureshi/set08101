@@ -96,13 +96,3 @@ const recipes = [
     }
   });
   
-  
-
-// Change navbar background color on scroll
-/*window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scroll');
-  } else {
-    navbar.classList.remove('scroll');
-  }
-});*/

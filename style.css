@@ -29,7 +29,6 @@ a:hover {
   background-color: #3e8de3; /* Change the background color on hover */
   color: #FAF9F6; /* Change the text color on hover */
   padding: 0;
-
 }
 
 .navbar {
@@ -40,9 +39,7 @@ a:hover {
   background-color: #263166;
   padding: 8px;
   transition: all 0.5s ease-in-out;
-    font-size: 20px;
-  /*width: 200% auto; this might work to keep the nav bar a good size width on mobile*/
-
+  font-size: 20px;
 }
 
 .navbar-center {
@@ -58,7 +55,6 @@ a:hover {
   color: #FAF9F6;
 }
 
-
 .navbar a {
   /*Heading text colour*/
   color: Black;
@@ -66,6 +62,7 @@ a:hover {
   margin-right: 16px;
   transition: color 0.5s ease-in-out;
 }
+
 .navbar a:hover {
   background-color: #3e8de3; /* Change the background color on hover */
   color: #FAF9F6; /* Change the text color on hover */
@@ -75,6 +72,7 @@ a:hover {
   /*dark mode enabled heading text color*/
   color: #FAF9F6;
 }
+
 .dark-mode .navbar a:hover {
   background-color: #3e8de3; /* Change the background color on hover */
   color: black; /* Change the text color on hover */
@@ -167,14 +165,17 @@ a:hover {
   left: calc(100% - 22px);
   background-color: #ffa500;
 }
+
 .dark-mode .navbar-center {
   color: #FAF9F6;
 }
+
 .image-container {
   margin-top: 1px;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .image-container img {
   display: block;
   /*Image size*/
@@ -182,6 +183,7 @@ a:hover {
   height: auto;
   margin: auto;
 }
+
 .image-container a {
   display: border-box;
   color: black;
@@ -189,20 +191,21 @@ a:hover {
   padding: 0px;
   text-decoration: none;
 }
+
 .dark-mode .image-container a {
   color: #FAF9F6;
 }
+
 .image-container a:hover {
   background-color: #3e8de3;
   color: #FAF9F6;
   transition: all 0.5s ease-in-out;
-
 }
+
 .dark-mode .image-container a:hover {
   background-color: #3e8de3;
   color: black;
   transition: all 0.5s ease-in-out;
-
 }
 
 .img-slider{
@@ -486,10 +489,6 @@ a:hover {
 
 }
 
-/* .text-container-recipe-1{
-
-} */
-
 .print-button button{
   background-color: #AAABB8; /* Change background color */
   color: black; /* Change text color */
@@ -641,7 +640,7 @@ ul.a {
   vertical-align: middle;
 }
 
-/*Recipe slideshows css starts here ****************************************** */
+/*Recipe slideshows css starts here *******************************************/
 
 .mySlides1, .mySlides2, .mySlides3 {display: none}
 
