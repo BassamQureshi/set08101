@@ -1,3 +1,5 @@
+// Website used for help with recipe page slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp
+
 let slideIndex = [1, 1, 1];
 let slideId = ["mySlides1", "mySlides2", "mySlides3"];
 let timeoutId = [];
@@ -69,7 +71,7 @@ const recipes = [
     // Check if the search query matches a recipe name
     const matchedRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(searchQuery.toLowerCase()));
   
-    // Redirect to recipe page if there is a match
+    // Redirect the user to the recipe page if there is a match
     if (matchedRecipes.length > 0) {
       window.location.href = matchedRecipes[0].link;
     } else {

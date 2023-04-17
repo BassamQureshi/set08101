@@ -1,3 +1,5 @@
+// Website used for help with home page slideshow: https://www.codingsnow.com/2021/01/responsive-image-slider-with-manual.html
+
 const navbar = document.querySelector('.navbar');
 const darkModeButton = document.querySelector('.dark-mode-button');
 
@@ -63,7 +65,7 @@ var repeat = function(activeClass){
 }
 repeat();
 
-// Define recipe names and links
+// Defining recipe names and links
 const recipes = [  
   {name: 'Fluffy Scrambled Eggs & Avocado Slices On Toast', link: 'recipe1.html'},  
   {name: 'Mini Chicken Meatball, Pasta, & Vegetable Soup', link: 'recipe2.html'},  
@@ -87,11 +89,11 @@ const recipes = [
     // Check if the search query matches a recipe name
     const matchedRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(searchQuery.toLowerCase()));
   
-    // Redirect to recipe page if there is a match
+    // Redirect the user to the recipe page if there is a match
     if (matchedRecipes.length > 0) {
       window.location.href = matchedRecipes[0].link;
     } else {
-      // Display error message if there are no matches
+      // Display an error message if there are no matches
       alert('No results found for "' + searchQuery + '". Please try again.');
     }
   });

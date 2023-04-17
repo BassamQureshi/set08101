@@ -178,7 +178,7 @@ const recipes = [
     // Check if the search query matches a recipe name
     const matchedRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(searchQuery.toLowerCase()));
   
-    // Redirect to recipe page if there is a match
+    // Redirect the user to the recipe page if there is a match
     if (matchedRecipes.length > 0) {
       window.location.href = matchedRecipes[0].link;
     } else {
